@@ -1,0 +1,14 @@
+{% set integration_name = 'reporter_issues' %}
+{% set display_name = 'Issue reporter' %}
+
+
+<Test-Integration-Item
+        integration_name="{{ integration_name }}"
+        display_name="{{ display_name }}"
+        :project_integrations="{{ project_integrations }}"
+>
+    <template #selector="{selected_integration, is_selected}">
+        <div class="security_integration_item" data-name="reporter_issues"></div>
+    </template>
+</Test-Integration-Item>
+

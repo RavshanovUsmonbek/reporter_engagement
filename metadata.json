@@ -1,0 +1,7 @@
+{
+  "name": "Carrier Issues Reporter Plugin",
+  "version": "0.1",
+  "module": "plugins.reporter_issues",
+  "depends_on": ["integrations"],
+  "init_after": []
+}
