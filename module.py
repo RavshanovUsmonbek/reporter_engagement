@@ -39,14 +39,12 @@ class Module(module.ModuleModel):
             test_planner_description='Specify processing tools. You may also set processors in <a '
                                      'href="{}">Integrations</a> '.format('/-/configuration/integrations/')
         )
-
         self.context.rpc_manager.call.integrations_register(
             name=self.descriptor.name,
             section=SECTION_NAME,
         )
 
         self.descriptor.init_rpcs()
-
         self.descriptor.init_slots()
 
     def deinit(self):  # pylint: disable=R0201
