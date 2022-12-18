@@ -27,7 +27,7 @@ class Slot:
         project_integrations = get_engagements_json(self)
         with context.app.app_context():
             return self.descriptor.render_template(
-                'test_toggle/content.html',
+                'performance/content.html',
                 project_integrations=project_integrations,
                 instance_name_prefix=payload.get('instance_name_prefix', '')
             )
@@ -36,5 +36,5 @@ class Slot:
     def ui_toggle_scripts(self, context, slot, payload):
         with context.app.app_context():
             return self.descriptor.render_template(
-                'test_toggle/scripts.html',
+                'performance/scripts.html',
             )
