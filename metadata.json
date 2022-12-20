@@ -1,7 +1,7 @@
 {
-  "name": "Carrier Issues Reporter Plugin",
+  "name": "Carrier Engagement Reporter Plugin",
   "version": "0.1",
-  "module": "plugins.reporter_issues",
+  "module": "plugins.reporter_engagement",
   "depends_on": ["integrations"],
   "init_after": []
 }
